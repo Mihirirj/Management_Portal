@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+
+
+
+    /*************Table Style**********************************************/
+    
+ .innerTable {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.innerTableHeader {
+   /* text-align: left;*/
+    padding: 8px;
+     background-color: #A10000;
+    color: white;
+}
+
+.innerTableRow {
+	padding: 8px;
+    height: 30px;
+}
+
+.innerTableRow:nth-child(even){background-color: #f2f2f2}

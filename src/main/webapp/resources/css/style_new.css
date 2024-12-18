@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+
+
+body {
+    background: #b6b7bc;
+    font-size: .80em;
+    font-family: "Helvetica Neue" , "Lucida Grande" , "Segoe UI" , Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    vertical-align: middle;
+}
+/*******Header*****************************************************/
+.tblInner{
+   width:953px; 
+   azimuth:center;
+   margin-left:auto;
+   margin-right:auto;
+   text-align:center;
+   margin-top:5px
+}
+
+.tblHeader{
+    width:100%;
+    border-collapse: collapse;
+    border-style:solid;
+    border-width:thin;
+    azimuth:center;
+    padding:0;
+    border-spacing:0;
+}
+
+.tblBody {
+	margin: 5px auto;
+	width: 953px;
+	/*height:450px;*/
+}
+.body-screen {
+	background-color: #FFF;
+	padding: 5px;
+	height:100%;
+	
+}
+/*******Menu Bar*****************************************************/
+.menubar {
+	margin: 5px auto;
+	width: 953px;
+	background-color: #A10000;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	/*height:450px;*/
+	height:32px;
+}
+
+/*******Footer*****************************************************/
+.tblFooter {
+	/*margin: 200px auto;*/
+	margin-bottom:5px;
+	margin-left:auto;
+   margin-right:auto;
+	/*width: 953px;
+	/*height:10px;*/
+	text-align:center;
+	padding:0px;
+	
+}
+.footer-screen {
+	background-color: #b6b7bc;
+	padding: 0px;
+	
+}
+.footer
+{
+    /*color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;*/
+    text-align: center;
+    /*line-height: normal;
+    height: 26px;*/
+}
+
+/*******Login screen styles*****************************************************/
+.login {
+	margin: 20px auto;
+	width: 300px;
+}
+.login-screen {
+	background-color: #F5E4E4;
+	padding: 20px;
+	border-radius: 5px
+}
+
+.app-title {
+text-align: center;
+color: #777;
+}
+
+.login-form {
+text-align: center;
+}
+.control-group {
+margin-bottom: 10px;
+}
+
+input {
+text-align: center;
+background-color: #FFF;
+border: 2px solid transparent;
+border-radius: 3px;
+font-size: 16px;
+font-weight: 200;
+padding: 10px 0;
+width: 250px;
+transition: border .5s;
+}
+
+input:focus {
+border: 2px solid #3498DB;
+box-shadow: none;
+}
+
+.btn {
+  border: 2px solid transparent;
+  background: #A10000;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-shadow: none;
+  border-radius: 3px;
+  box-shadow: none;
+  transition: 0.25s;
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  background-color: #620000;
+}
+/************************************************************/

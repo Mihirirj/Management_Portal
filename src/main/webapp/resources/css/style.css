@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+
+
+body {
+    background: #fff;
+    font-size: .80em;
+    font-family: "Helvetica Neue" , "Lucida Grande" , "Segoe UI" , Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+    vertical-align: middle;
+}
+/*******Header*****************************************************/
+.tblInner{
+   width:293px; 
+   azimuth:center;
+   margin-left:auto;
+   margin-right:auto;
+   text-align:center;
+   margin-top:5px
+}
+
+.tblHeader{
+    width:100%;
+    border-collapse: collapse;
+   
+    border-width:thin;
+    azimuth:center;
+    padding:0;
+    border-spacing:0;
+    margin-top:70px;
+}
+.tblMenuHeader{
+    width:100%;
+    border-collapse: collapse;
+   	margin-left:10px;
+    border-width:thin;
+    azimuth:center;
+    padding:0;
+    border-spacing:0;
+    
+}
+.tblBody {
+	margin: 15px auto;
+	margin-left:250px;
+	height:100%;
+	/*width: 953px;*/
+	/*height:450px;*/
+}
+.body-screen {
+	background-color: #FFF;
+	padding: 5px;
+	height:100%; /* It was 400px */	
+}
+
+.pgHeader {
+    //color: black;
+    font-family: "Verdana", Times, serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button {
+    background-color: #F5E4E4; 
+    border: none;
+    color: black;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.textButton {
+    background-color: #F5E4E4; 
+    border: none;
+    color: black;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+    margin: 4px 2px;
+    cursor: pointer;
+    //border-radius: 12px;
+    font-weight: bold;
+}
+.button:hover {
+    background-color: #A10000; /* Green */
+    color: white;
+}
+
+.msgSuccess {
+    color: green;
+    font-family: "Verdana", Times, serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.msgError{
+
+    color:red;
+    font-family: "Verdana", Times, serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.msgInfo{
+
+   color:blue;
+    font-family: "Verdana", Times, serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*******Menu Bar*****************************************************/
+.menubar {
+	margin: 5px auto;
+	width: 953px;
+	background-color: #fff;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	/*height:450px;*/
+	height:42px;
+}
+
+/*******Footer*****************************************************/
+.tblFooter {
+	/*margin: 200px auto;*/
+	margin-bottom:5px;
+	margin-left:auto;
+   margin-right:auto;
+	/*width: 953px;
+	/*height:10px;*/
+	text-align:center;
+	padding:0px;
+	
+}
+.footer-screen {
+	background-color: #fff;
+	padding: 0px;
+	
+}
+.footer
+{
+    /*color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;*/
+    text-align: center;
+    /*line-height: normal;
+    height: 26px;*/
+}
+
+
+/*************Form Layout***********************************************/
+
+.formLayout
+{
+    
+    background-color: #fff;
+    
+    padding: 10px;
+    width: 450px;
+}
+
+.formLayout label, .formLayout input
+{
+    display: block;
+    width: 150px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.formLayout label
+{
+    text-align: right;
+    padding-right: 20px;
+}
+
+br
+{
+    clear: left;
+}
+
+
+fieldset{
+	width:500px;
+	border: 0;
+}
+legend{
+	font-size:20px;
+}
+label.field{
+	text-align:left;
+	width:150px;
+	float:left;
+	padding:2px;
+	font-size: 12px;
+	font-weight:bold;
+}
+input.textbox-300{
+	width:300px;
+	float:left;
+}
+fieldset p{
+	clear:both;
+	padding:1px;
+}
+
+labelfont{
+	
+	font-size: 8px;
+	/*font-weight:bold;*/
+}
+/*************Headings/Fonts***********************************************/
+ 

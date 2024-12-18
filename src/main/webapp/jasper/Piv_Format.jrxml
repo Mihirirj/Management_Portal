@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Piv_Format" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="@pivNo" class="java.lang.String"/>
+	<parameter name="@costCtr" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from piv_detail where piv_no = 'PIV/423.10/ANC/2011/0795'  and dept_id = '423.10']]>
+	</queryString>
+	<field name="PIV_NO" class="java.lang.String"/>
+	<field name="PIV_SEQ_NO" class="java.math.BigDecimal"/>
+	<field name="DEPT_ID" class="java.lang.String"/>
+	<field name="PIV_RECEIPT_NO" class="java.lang.String"/>
+	<field name="REFERENCE_TYPE" class="java.lang.String"/>
+	<field name="REFERENCE_NO" class="java.lang.String"/>
+	<field name="APP_REFERENCE_NO" class="java.lang.String"/>
+	<field name="EST_REFERENCE_NO" class="java.lang.String"/>
+	<field name="REVISE_REFERENCE_NO" class="java.lang.String"/>
+	<field name="ID_NO" class="java.lang.String"/>
+	<field name="PIV_DATE" class="java.sql.Timestamp"/>
+	<field name="PIV_AMOUNT" class="java.math.BigDecimal"/>
+	<field name="CEB_BRANCH_NAME" class="java.lang.String"/>
+	<field name="BANK_CODE" class="java.lang.String"/>
+	<field name="BRANCH_CODE" class="java.lang.String"/>
+	<field name="PAYMENT_MODE" class="java.lang.String"/>
+	<field name="BANK_PAID_DATE" class="java.sql.Timestamp"/>
+	<field name="PAID_DATE" class="java.sql.Timestamp"/>
+	<field name="CHEQUE_BANK_CODE" class="java.lang.String"/>
+	<field name="CHEQUE_BRANCH_CODE" class="java.lang.String"/>
+	<field name="CHEQUE_DATE" class="java.sql.Timestamp"/>
+	<field name="CHEQUE_NO" class="java.math.BigDecimal"/>
+	<field name="MISCELLANEOUS_INCOME" class="java.math.BigDecimal"/>
+	<field name="ELECTRICITY_DEBTORS" class="java.math.BigDecimal"/>
+	<field name="SECURITY_DEPOSIT" class="java.math.BigDecimal"/>
+	<field name="SER_CONN_OR_ELEC_SCH" class="java.math.BigDecimal"/>
+	<field name="TENDER_DEPOSIT" class="java.math.BigDecimal"/>
+	<field name="MISCELLANEOUS_DEPOSIT" class="java.math.BigDecimal"/>
+	<field name="CASH_IN_TRANSIT" class="java.math.BigDecimal"/>
+	<field name="FOR_DISHONORED_CHEQUE" class="java.math.BigDecimal"/>
+	<field name="SUB_TOTAL" class="java.math.BigDecimal"/>
+	<field name="VAT" class="java.math.BigDecimal"/>
+	<field name="GRAND_TOTAL" class="java.math.BigDecimal"/>
+	<field name="LOAN_REFERENCE" class="java.lang.String"/>
+	<field name="LOAN_AMOUNT" class="java.math.BigDecimal"/>
+	<field name="PREPARED_BY" class="java.lang.String"/>
+	<field name="APPROVED_BY" class="java.lang.String"/>
+	<field name="CONFIRMED_BY" class="java.lang.String"/>
+	<field name="CONFIRMED_DATE" class="java.sql.Timestamp"/>
+	<field name="CONFIRMED_TIME" class="java.lang.String"/>
+	<field name="STATUS" class="java.lang.String"/>
+	<field name="ADD_USER" class="java.lang.String"/>
+	<field name="ADD_DATE" class="java.sql.Timestamp"/>
+	<field name="ADD_TIME" class="java.lang.String"/>
+	<field name="UPD_USER" class="java.lang.String"/>
+	<field name="UPD_DATE" class="java.sql.Timestamp"/>
+	<field name="UPD_TIME" class="java.lang.String"/>
+	<field name="CANCEL_USER" class="java.lang.String"/>
+	<field name="CANCEL_DATE" class="java.sql.Timestamp"/>
+	<field name="CANCEL_TIME" class="java.lang.String"/>
+	<field name="DESCRIPTION" class="java.lang.String"/>
+	<field name="POS_CENTER" class="java.lang.String"/>
+	<field name="POS_A" class="java.lang.String"/>
+	<field name="NBT_AMOUNT" class="java.math.BigDecimal"/>
+	<field name="BANK_CHECK_NO" class="java.lang.String"/>
+	<field name="BANK_STATUS" class="java.lang.String"/>
+	<field name="BANK_PAID_TIME" class="java.sql.Timestamp"/>
+	<field name="PAID_AMOUNT" class="java.math.BigDecimal"/>
+	<field name="PROCESSING_FEE" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="67" splitType="Stretch">
+			<staticText>
+				<reportElement key="staticText-1" x="0" y="0" width="535" height="51"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12" isBold="true" isUnderline="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Ceylon Electricity Board]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="157" splitType="Stretch">
+			<staticText>
+				<reportElement key="staticText" x="267" y="0" width="67" height="27" backcolor="#FFF0E8"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Issue Date]]></text>
+			</staticText>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement key="textField" x="67" y="0" width="200" height="27" backcolor="#FFF0E8"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{CEB_BRANCH_NAME}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement key="textField" x="67" y="81" width="200" height="27" backcolor="#FFF0E8"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+			</textField>
+			<staticText>
+				<reportElement key="staticText" x="0" y="27" width="67" height="27" backcolor="#FFF0E8"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Cost Center No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText" x="0" y="54" width="67" height="27" backcolor="#FFF0E8"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Reference No ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText" x="0" y="81" width="67" height="27" backcolor="#FFF0E8"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Reference No ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText" x="0" y="0" width="67" height="27" backcolor="#FFF0E8"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[CEB Branch]]></text>
+			</staticText>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement key="textField" x="334" y="27" width="200" height="27" backcolor="#FFF0E8"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{PIV_DATE}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement key="textField" x="334" y="54" width="200" height="27" backcolor="#FFF0E8"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+			</textField>
+			<staticText>
+				<reportElement key="staticText" x="267" y="27" width="67" height="27" backcolor="#FFF0E8"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Expiry Date]]></text>
+			</staticText>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement key="textField" x="67" y="27" width="200" height="27" backcolor="#FFF0E8"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{DEPT_ID}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="staticText" x="267" y="54" width="67" height="27" backcolor="#FFF0E8"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Reference No ]]></text>
+			</staticText>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement key="textField" x="334" y="0" width="200" height="27" backcolor="#FFF0E8"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.sql.Timestamp"><![CDATA[$F{PIV_DATE}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement key="textField" x="67" y="54" width="200" height="27" backcolor="#FFF0E8"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

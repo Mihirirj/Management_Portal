@@ -1,0 +1,104 @@
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://java.sun.com/xml/ns/persistence
+        http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	
+	<persistence-unit name="persistenceUnitMgtPortal"	transaction-type="JTA">
+		<jta-data-source>java:jboss/datasources/OracleDatasourceMgtPortal</jta-data-source>
+	
+		
+		
+		
+		<class>com.it.dashboard.admin.domain.PivHistory</class>
+		<class>com.it.dashboard.admin.domain.Sauserm</class>
+		<class>com.it.dashboard.admin.domain.Sausrdpl</class>
+		<class>com.it.dashboard.admin.domain.SausrdplPK</class>
+		<class>com.it.dashboard.admin.domain.Sausrdpm</class>
+		<class>com.it.dashboard.admin.domain.SausrdpmPK</class>
+		<class>com.it.dashboard.admin.domain.PivConfig</class>
+		
+		<class>com.it.dashboard.issue.domain.PivApplicant</class>
+		<class>com.it.dashboard.issue.domain.PivApplicantPK</class>
+		<class>com.it.dashboard.issue.domain.PivApproval</class>
+		<class>com.it.dashboard.issue.domain.PivApprovalPK</class>
+		<class>com.it.dashboard.issue.domain.PivDetail</class>
+		<class>com.it.dashboard.issue.domain.PivDetailPK</class>
+		<class>com.it.dashboard.issue.domain.PivAmount</class>
+		<class>com.it.dashboard.issue.domain.PivAmountPK</class>
+		
+		<class>com.it.dashboard.master.domain.Bank</class>
+		<class>com.it.dashboard.master.domain.BankBranch</class>
+		<class>com.it.dashboard.master.domain.BankBranchPK</class>
+		<class>com.it.dashboard.master.domain.Glacctm</class>
+		<class>com.it.dashboard.master.domain.Glacgrpm</class>
+		<class>com.it.dashboard.master.domain.GlacgrpmPK</class>
+		<class>com.it.dashboard.master.domain.Gltitlm</class>
+		<class>com.it.dashboard.master.domain.PivActivity</class>
+		<class>com.it.dashboard.master.domain.TaxMaster</class>
+		<class>com.it.dashboard.master.domain.Gldeptm</class>
+		<class>com.it.dashboard.master.domain.Glcompm</class>
+		<class>com.it.dashboard.master.domain.PivTypeAuth</class>
+		<class>com.it.dashboard.master.domain.PivTypeAuthPK</class>
+		<class>com.it.dashboard.master.domain.Agent</class>
+		<class>com.it.dashboard.master.domain.AgentBranch</class>
+		<class>com.it.dashboard.master.domain.AppSubtypeCharge</class>
+		<class>com.it.dashboard.master.domain.AppSubtypeChargePK</class>
+		<class>com.it.dashboard.master.domain.Spstdrat</class>
+		<class>com.it.dashboard.master.domain.SpstdratPK</class>
+		
+		<class>com.it.dashboard.payment.domain.PivBatchUpload</class>
+		<class>com.it.dashboard.payment.domain.PivBatchUploadPK</class>
+		<class>com.it.dashboard.payment.domain.PivPayment</class>
+		<class>com.it.dashboard.payment.domain.PivPaymentPK</class>
+		
+		<class>com.it.dashboard.refund.domain.PivRefundPK</class>
+		<class>com.it.dashboard.refund.domain.PivRefund</class>
+		
+		<class>com.it.dashboard.tabulate.domain.Glvocdtt</class>
+		<class>com.it.dashboard.tabulate.domain.GlvocdttPK</class>
+		<class>com.it.dashboard.tabulate.domain.Glvochtt</class>
+		<class>com.it.dashboard.tabulate.domain.GlvochttPK</class>
+		<class>com.it.dashboard.payment.domain.PivBankTran</class>
+		<class>com.it.dashboard.payment.domain.Spstdesthmt</class>
+		<class>com.it.dashboard.payment.domain.SpstdesthmtPK</class>
+		<class>com.it.dashboard.master.domain.Application</class>
+		<class>com.it.dashboard.master.domain.ApplicationPK</class>
+		<class>com.it.dashboard.master.domain.Pcesthmt</class>
+		<class>com.it.dashboard.master.domain.PcesthmtPK</class>
+		<class>com.it.dashboard.master.domain.Pcesthtt</class>
+		<class>com.it.dashboard.master.domain.PcesthttPK</class>
+		<class>com.it.dashboard.master.domain.WiringLandDetail</class>
+		<class>com.it.dashboard.master.domain.WiringLandDetailPK</class>
+		<class>com.it.dashboard.master.domain.ApplicationReference</class>
+		<class>com.it.dashboard.master.domain.ApplicationReferencePK</class>
+		<class>com.it.dashboard.service.domain.CaRequest</class>
+		<class>com.it.dashboard.service.domain.PivServiceRequest</class>
+		<class>com.it.dashboard.master.domain.Gldeptin</class>
+		
+		<properties>
+		
+			<property name="jboss.entity.manager.factory.jndi.name"	value="persistenceMgtPortal" />
+			<property name="hibernate.transaction.manager_lookup_class"
+				value="org.hibernate.transaction.JBossTransactionManagerLookup" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect" />
+
+			<property name="hibernate.show_sql" value="false" />
+			<property name="hibernate.connection.pool_size" value="100" />
+			<property name="hibernate.connection.timeout" value="10" />
+			<property name="hibernate.connection.idle_test_period" value="3000" />
+			<property name="hibernate.connection.maxIdle" value="20" />
+			<property name="hibernate.connection.maxWait" value="300" />
+			<property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider" />
+			<property name="hibernate.connection.autocommit" value="false" />
+		</properties>
+		
+		
+		
+		
+	</persistence-unit>
+	
+	
+</persistence>
+
+
